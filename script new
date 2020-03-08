@@ -1,0 +1,56 @@
+echo “hello”
+hello
+echo  “$word”
+$word
+word = “sam”
+echo “$word”
+sam
+echo “${word}”
+sam
+echo “sam is not ${word}”
+sam is not sam
+echo  “sam is not $word”
+sam is not sam
+username = $(id –un)
+echo  “command excuted is id –un”
+commmand excuted is id -un
+echo  “your username is ${username}”
+your username is vagrant
+username = “whoami”
+echo “command used is whoami”
+command used is whoami
+echo  “command used is ${username}”
+command used is whoami
+if [[ “${UID}” –eq 1000 ]]
+then
+echo “you are root.”
+else
+echo “you are not root.”
+fi
+you are root.
+if [[ “${UID}” –eq 10 ]]
+then
+echo “you are root.”
+else
+echo “you are not root.”
+fi
+you are not root.
+username = $(id  –un)
+q=“vagrant”
+if   [[  ‘’${username}”  -eq  “${q}” ]]
+then 
+echo  “Your username matches ${q}.”
+exit 1
+fi
+Your username matches vagrant.
+read –p “enter the username to create ” username
+Enter the username to create samarth123
+Read –p “enter the name of the person who this account is for:”  comment
+Enter the name of the person who this account is for: samarth
+Read –p “enter the password to use for the account:” password
+Enter the password to use for the account:Qwertyuiop
+Echo ${password} | passwd –stdin ${username}
+Only  root can do that.
+Passwd –e ${username}
+Only  root can do that.
+
